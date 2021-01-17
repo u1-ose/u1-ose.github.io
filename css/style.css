@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +29,7 @@ header {
 	color: black;
 }
 .icon-menu{
-    width: 100px;
+    width: 300px;
 }
 
 /* ----------------------------------------------------- */
@@ -97,14 +98,85 @@ section.pizza{
     margin-top: 300px;
     
 }
+section.cake{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+  margin-top: 300px;
+  
+}
 
 .mini_pizza{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.mini_cake{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .buy{
     display: flex;
     justify-content: space-around;
     width: 60%;
+}
+.hiden_pizza{
+  display: none;  
+}
+.hiden_cake{
+  display: none;
+}
+body {
+  border-left: 1px solid rgb(14, 255, 255); 
+  border-right: 1px solid rgb(14, 255, 255); 
+  padding: 0 30px; 
+  margin: 0 10%; 
+}
+
+.text_logo h3 {
+  display: table;
+  width: auto;
+  margin: 15px auto;
+  letter-spacing: 2px;
+}
+.text_logo h3:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -25px;
+  width: 30px;
+  height: 20px;
+  border-top: 2px solid #00e1ff;
+  border-left: 2px solid  #00e1ff;
+}
+.text_logo h3:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  right: -25px;
+  width: 30px;
+  height: 20px;
+  border-bottom: 2px solid #00e1ff;
+  border-right: 2px solid  #00e1ff;
+}
+.logo {
+  padding: 20px 0;
+  text-align: center;
+}
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  max-width: 320px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  color: #465457;
+}
+hr {
+  border: none; /* Убираем границу */
+  background-color: red; /* Цвет линии */
+  color: red; /* Цвет линии для IE6-7 */
+  height: 2px; /* Толщина линии */
 }
